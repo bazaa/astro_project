@@ -1,0 +1,21 @@
+---
+// Component imports and setup Javascript go here!
+import BaseLayout from "../layouts/baseLayout.astro";
+
+const title = "Testing a contact page"; // passed all the way down to baseHead.astro
+---
+
+<style lang="scss">
+	div {
+		h1 {
+			color: purple;
+		}
+	}
+</style>
+
+<BaseLayout title={title}>
+	<div>
+		<h1>contact page test</h1>
+		<p>This is the contact page</p>
+	</div>
+</BaseLayout>
